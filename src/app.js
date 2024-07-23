@@ -111,16 +111,3 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   //removed msg
   UI.showAlert('Book Removed', 'danger');
 });
-//API
-
-async function pullBook(book) {
-  const url = `https://www.loc.gov/books/?q=${book}&fo=json`;
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`${res.status}`);
-  }
-  const data = await res.json();
-  console.log(data.results[0].item.title);
-  console.log(data.results[0].item.contributors[0]);
-  console.log(data.results[0].item.summary[0]);
-}
