@@ -1,5 +1,5 @@
 //API
-const bookList = [];
+let bookList = [];
 const bookResults = document.getElementById('bookBox');
 const bookBtn = document.getElementById('bookSearchButton');
 let bookNum = 0;
@@ -37,3 +37,19 @@ async function pullBook(book) {
     bookNum++;
   });
 }
+
+document.querySelector('#book-search-form').addEventListener('submit', (e) => {
+  //block submit function
+  e.preventDefault();
+  //retrieve values
+  let book = document.querySelector('#search-title').value;
+
+  //validate submission
+  if (book === '') {
+    alert('What are you looking for?');
+  } else {
+    bookList = [];
+    pullBook(book);
+    document.querySelector('#search-title').value = '';
+  }
+});

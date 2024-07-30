@@ -2,7 +2,7 @@
   margin: auto;
   width: 100%;
   height: 45%;
-  border: 3px solid #ccd5ae;
+
   padding-right: 50px;
   padding-left: 50px;
   display: flex;
@@ -20,4 +20,21 @@
 .resultsIcon {
   width: 45%;
   height: 45%;
+}
+label {
+  display: flex;
+  position: relative;
+}
+form {
+  position: relative;
+  display: flex;
+  padding: 10px;
+}
+input {
+  position: relative;
+  display: flex;
+  padding-left: 10px;
+}
+#bookSearchTop {
+  display: flex;
 }

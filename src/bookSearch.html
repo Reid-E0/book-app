@@ -17,12 +17,19 @@
   </head>
   <body>
     <div class="bookBox">
-      <button name="bookSearchButton" id="bookSearchButton">
-        <p>Search the Library of Congress to find something New!</p>
-      </button>
+      <form id="book-search-form">
+        <div class="form-group" id="bookSearchTop">
+          <label class="text-light" for="search-title"
+            >Search the Library of Congress</label
+          >
+          <input type="text" id="search-title" class="form-control" />
+
+          <input type="submit" value="Search" class="btn btn-light btn-sm" />
+        </div>
+      </form>
     </div>
     <div class="bookResults card" id="bookResults">
-      <div class="bookBox bg-light card" id="bookBox"></div>
+      <div class="bookBox" id="bookBox"></div>
     </div>
 
     <script src="api.js"></script>
