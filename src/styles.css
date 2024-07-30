@@ -1,14 +1,23 @@
 .bookResults {
   margin: auto;
   width: 100%;
+  height: 45%;
   border: 3px solid #ccd5ae;
-  padding-right: 55px;
-  padding-left: 55px;
+  padding-right: 50px;
+  padding-left: 50px;
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
 }
-#bookImg {
-  width: 100%;
+.bookImg {
   align-self: center;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  width: fit-content;
+}
+.resultsIcon {
+  width: 45%;
+  height: 45%;
 }
