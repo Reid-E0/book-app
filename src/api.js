@@ -31,7 +31,7 @@ async function pullBook(book) {
     }
     // bookImg.src = res.results[bookNum].image_url[0];
     bookTitle.innerHTML = `${res.results[bookNum].title} <br><small class="text-body-secondary">Call #:${res.results[bookNum].shelf_id}</small>`;
-    bookDescription.innerText = `${res.results[bookNum].description}`;
+    bookDescription.innerHTML = `${res.results[bookNum].description} <a href="${res.results[bookNum].aka[0]}" target="_blank">Read More at LOC</a>`;
     newBook.append(bookImg, bookTitle, bookDescription);
     bookResults.appendChild(newBook);
     bookNum++;
