@@ -3,8 +3,7 @@ const favicon = require('serve-favicon');
 const path = require('path');
 const app = express();
 const port = 3000;
-app.use(favicon(path.join(__dirname, 'imgs', 'book-app-icon.png')));
-
+app.use(favicon(path.join(__dirname, 'src', 'book-app-icon.png')));
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/homepage.html'));
 });
@@ -18,7 +17,6 @@ app.get('/aboutme.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/aboutMe.html'));
 });
 app.use(express.static('src'));
-app.use(express.static('imgs'));
 app.listen(port, () => {
   console.log(`Listening ${port}`);
 });

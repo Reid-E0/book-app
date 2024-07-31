@@ -11,23 +11,69 @@
       rel="stylesheet"
       href="https://bootswatch.com/5/solar/bootstrap.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="../imgs/book-app-icon.png" />
+    <link rel="stylesheet" href="homePage.css" />
+    <link rel="icon" type="image/x-icon" href="book-app-icon.png" />
     <title>myReads</title>
   </head>
   <body>
     <ul class="nav nav-pills">
       <li class="nav-item">
-        <a class="nav-link" href="/src/homepage.html">Homepage</a>
+        <a class="nav-link" href="/">Homepage</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/src/bookList.html">Book List</a>
+        <a class="nav-link" href="bookList.html">Book List</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/src/bookSearch.html">Search LOC</a>
+        <a class="nav-link" href="bookSearch.html">Search LOC</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/src/aboutMe.html">Meet the Team</a>
+        <a class="nav-link" href="aboutMe.html">Meet the Team</a>
       </li>
     </ul>
+    <header><h1 class="text-light mx-5">Welcome to myReads!</h1></header>
+    <div class="wrapper m-5">
+      <div class="one">
+        <h2 class="text-info">Abstract</h2>
+        <p class="text-light">
+          Welcome to myReads! This project respresents the culmination of my
+          work in the Code Louisville program. For this project, I decided that
+          I wanted to create an app that would allow users to create lists of
+          books they plan to read, as well as query the Library of Congress
+          database for additional materials.
+        </p>
+      </div>
+      <div class="two">
+        <h3><a href="bookList.html">Book List</a></h3>
+        <p class="text-light">
+          Create a list of books! This list is saved to your local storage, so
+          you won't have to worry about losing your results when you close your
+          browser window. Just be sure not to clear that cache!
+        </p>
+      </div>
+      <div class="three">
+        <h3><a href="bookSearch.html">Search the LOC</a></h3>
+        <p class="text-light">
+          This tool allows you to query the books catalog of the Library of
+          Congress. What is unique about this database is that it contains more
+          than just books. It contains maybe different types of print materials
+          that can include scans of portraits, court decisions, and much more!
+        </p>
+      </div>
+      <div class="four">
+        <p class="text-light">
+          I was inspired to create this project by my past experience as a
+          research assistant and time in graduate school. When starting on a new
+          project, you often find yourself with a scrap of paper with a dozen or
+          so call numbers. Univserity libraries use the same cataloging system
+          as the Library of Congress (LOC), which means books are shelved
+          according to subject matter. What this means is that you often find
+          the most interesting titles on your subject without even meaning to!
+          This process of discovery in research is vital. To get started, click
+          "Search LOC" above and starting searching the stacks! And don't worry,
+          the search is restricted to digitaized materials only, so you don't
+          even have to go to the library to pull your first text.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
