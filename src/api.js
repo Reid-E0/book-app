@@ -3,6 +3,7 @@ let bookList = [];
 const bookResults = document.getElementById('bookBox');
 const bookBtn = document.getElementById('bookSearchButton');
 let bookNum = 0;
+let bookSearchResults = document.getElementById('bookBox');
 //API
 async function pullBook(book) {
   const rawRes = await fetch(
@@ -24,9 +25,9 @@ async function pullBook(book) {
     bookTitle.classList.add('card-title', 'ms-3');
     let bookDescription = document.createElement('p');
     bookDescription.classList.add('card-text', 'mx-5');
-    //check if LOC has img, if not add formatting class to placeholder
+    //check if LOC has img, if not add placeholder
     if (res.results[bookNum].image_url[0] == undefined) {
-      bookImg.src = '../imgs/book-app-icon.png';
+      bookImg.src = 'book-app-icon.png';
       bookImg.classList.add('resultsIcon');
     } else {
       bookImg.src = res.results[bookNum].image_url[0];
@@ -41,21 +42,20 @@ async function pullBook(book) {
     bookNum++;
   });
 }
-//Reset API function
-function resetBooks() {
-  const element = document.getElementById('bookBox');
-  while (element.firstChild) {
-    element.removeChild(element.firstChild);
-  }
-  bookList = [];
-  bookNum = 0;
-}
 //Form submit
 document.querySelector('#book-search-form').addEventListener('submit', (e) => {
   //block submit function
   e.preventDefault();
   //retrieve values
   let book = document.querySelector('#search-title').value;
+  //check if results are present, if so, remove
+  if (bookSearchResults.firstChild != null) {
+    while (bookSearchResults.firstChild) {
+      bookSearchResults.removeChild(bookSearchResults.firstChild);
+    }
+    bookList = [];
+    bookNum = 0;
+  }
 
   //check for book
   if (book === '') {

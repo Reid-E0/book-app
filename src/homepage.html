@@ -12,8 +12,7 @@
       href="https://bootswatch.com/5/solar/bootstrap.min.css"
     />
     <link rel="icon" type="image/x-icon" href="../imgs/book-app-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Book Search</title>
+    <title>myReads</title>
   </head>
   <body>
     <ul class="nav nav-pills">
@@ -30,21 +29,5 @@
         <a class="nav-link" href="/src/aboutMe.html">Meet the Team</a>
       </li>
     </ul>
-    <div class="bookBox">
-      <form id="book-search-form">
-        <div class="form-group" id="bookSearchTop">
-          <label class="text-light" for="search-title"
-            >Search the Library of Congress</label
-          >
-          <input type="text" id="search-title" class="form-control" />
-          <input type="submit" value="Search" class="btn btn-light btn-sm" />
-        </div>
-      </form>
-    </div>
-    <div class="bookResults card" id="bookResults">
-      <div class="bookBox" id="bookBox"></div>
-    </div>
-
-    <script src="api.js"></script>
   </body>
 </html>

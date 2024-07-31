@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a68c0a585b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="../imgs/book-app-icon.png" />
+    <link rel="stylesheet" href="aboutMe.css" />
+    <title>myReids</title>
+  </head>
+  <body>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="/src/homepage.html">Homepage</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/src/bookList.html">Book List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/src/bookSearch.html">Search LOC</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/src/aboutMe.html">Meet the Team</a>
+      </li>
+    </ul>
+    <header>
+      <h1>About Me: Reid E.</h1>
+      <button onclick="toggleDarkMode()" id="modeSwitchBtn">
+        <svg width="30" height="30" id="light-icon">
+          <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+          <line
+            id="ray"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            x1="15"
+            y1="1"
+            x2="15"
+            y2="4"
+          ></line>
+
+          <use href="#ray" transform="rotate(45 15 15)" />
+          <use href="#ray" transform="rotate(90 15 15)" />
+          <use href="#ray" transform="rotate(135 15 15)" />
+          <use href="#ray" transform="rotate(180 15 15)" />
+          <use href="#ray" transform="rotate(225 15 15)" />
+          <use href="#ray" transform="rotate(270 15 15)" />
+          <use href="#ray" transform="rotate(315 15 15)" />
+        </svg>
+        <svg width="30" height="30" id="dark-icon">
+          <path
+            fill="currentColor"
+            d="
+            M 23, 5
+            A 12 12 0 1 0 23, 25
+            A 12 12 0 0 1 23, 5"
+          />
+        </svg>
+      </button>
+    </header>
+    <div>
+      <main>
+        <div class="bigBox">
+          <div class="box">
+            <p id="intro">
+              Hello, my name's Reid! I'm local cat dad who is working to become
+              a web developer. Click below to learn about a few of my favorite
+              things. If you are enjoying my site, feel free to use the links in
+              the footer to let me know!
+            </p>
+          </div>
+          <details>
+            <summary class="summaryTitle">My Favorite Things</summary>
+            <ul class="cards">
+              <li class="card">
+                <h4>Cats</h4>
+                <img
+                  src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Happy Cat"
+                  class="cardImage"
+                />
+                <p>
+                  Cats are the best! My Favorites are named Fox Mulder and
+                  Dusty.
+                </p>
+              </li>
+              <li class="card">
+                <h4>Reading</h4>
+                <img
+                  src="https://images.unsplash.com/photo-1550399105-05c4a7641b02?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Stack of books"
+                  class="cardImage"
+                />
+                <p>
+                  Reading is one of my favorite pastimes. You might say my name
+                  is an aptronym.
+                </p>
+              </li>
+              <li class="card">
+                <h4>Cup of Coffee</h4>
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1669687924558-386bff1a0469?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Cup of coffee"
+                  class="cardImage"
+                />
+                <p>
+                  Coffee goes great with a book and is my favorite way to start
+                  the day.
+                </p>
+              </li>
+              <li class="card">
+                <h4>Friendship</h4>
+                <img
+                  src="https://images.unsplash.com/photo-1496516348160-24b35a31856f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="A group of people sitting on a ledge seen from below"
+                  class="cardImage"
+                />
+                <p>
+                  Spending time with my friends is one of my favorite things to
+                  do.
+                </p>
+              </li>
+            </ul>
+          </details>
+        </div>
+      </main>
+    </div>
+    <script src="darkMode.js"></script>
+  </body>
+  <footer class="contact-container" id="contact">
+    <div class="contact-content">
+      <h2>Let's Connnect!</h2>
+      <article class="contact-item">
+        <h3>Send me an Email</h3>
+
+        <p>
+          <a href="mailto:reidelsea@gmail.com" class="btn"
+            >What do you think?</a
+          >
+        </p>
+      </article>
+
+      <article class="contact-item">
+        <h3>LinkedIn</h3>
+
+        <p>
+          <a
+            href="https://www.linkedin.com/in/c-reid-elsea-a64b40237/"
+            class="btn"
+            >Connect on LinkedIn</a
+          >
+        </p>
+      </article>
+      <article class="contact-item">
+        <h3>GitHub</h3>
+
+        <p>
+          <a href="https://github.com/Reid-E0" class="btn"
+            >Follow me on Github!</a
+          >
+        </p>
+      </article>
+    </div>
+  </footer>
+</html>

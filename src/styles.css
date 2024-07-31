@@ -29,11 +29,6 @@ form {
   display: flex;
   padding: 10px;
 }
-input {
-  position: relative;
-  display: flex;
-  padding-left: 15px;
-}
 #bookSearchTop {
   display: flex;
 }
