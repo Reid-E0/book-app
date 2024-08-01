@@ -11,11 +11,24 @@
       rel="stylesheet"
       href="https://bootswatch.com/5/solar/bootstrap.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="book-app-icon.png" />
+    <link rel="stylesheet" href="css/mobileNav.css" />
+    <link rel="icon" type="image/x-icon" href="imgs/book-app-icon.png" />
     <title>Book List</title>
   </head>
   <body>
-    <ul class="nav nav-pills">
+    <!-- Mobile Nav -->
+    <div class="mobileNav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </a>
+      <div id="myLinks">
+        <a class="mobileLinks" href="homepage.html">Home</a>
+        <a class="mobileLinks" href="bookSearch.html">Search</a>
+        <a class="mobileLinks" href="aboutMe.html">About</a>
+      </div>
+    </div>
+    <!-- Desktop Nav -->
+    <ul class="nav nav-pills" id="bigNav">
       <li class="nav-item">
         <a class="nav-link" href="/">Homepage</a>
       </li>
@@ -44,7 +57,7 @@
           <input type="text" id="author" class="form-control" />
         </div>
         <div class="form-group">
-          <label for="isbn">Call#</label>
+          <label for="isbn">Call#/ISNB</label>
           <input type="text" id="isbn" class="form-control" />
         </div>
         <div class="d-grid gap mt-4">
@@ -60,14 +73,14 @@
           <tr>
             <th>Title</th>
             <th>Author</th>
-            <th>Call#</th>
+            <th>Call#/ISNB</th>
             <th></th>
           </tr>
         </thead>
         <tbody id="book-list"></tbody>
       </table>
     </div>
-    <script src="app.js"></script>
-    <script src="api.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mobileNav.js"></script>
   </body>
 </html>

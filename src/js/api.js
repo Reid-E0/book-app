@@ -27,7 +27,7 @@ async function pullBook(book) {
     bookDescription.classList.add('card-text', 'mx-5');
     //check if LOC has img, if not add placeholder
     if (res.results[bookNum].image_url[0] == undefined) {
-      bookImg.src = 'book-app-icon.png';
+      bookImg.src = './imgs/book-app-icon.png';
       bookImg.classList.add('resultsIcon');
     } else {
       bookImg.src = res.results[bookNum].image_url[0];

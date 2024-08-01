@@ -11,11 +11,24 @@
       rel="stylesheet"
       href="https://bootswatch.com/5/solar/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="homePage.css" />
-    <link rel="icon" type="image/x-icon" href="book-app-icon.png" />
+    <link rel="stylesheet" href="css/homePage.css" />
+    <link rel="stylesheet" href="css/mobileNav.css" />
+    <link rel="icon" type="image/x-icon" href="imgs/book-app-icon.png" />
     <title>myReads</title>
   </head>
   <body>
+    <!-- Mobile Nav -->
+    <div class="mobileNav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </a>
+      <div id="myLinks">
+        <a class="mobileLinks" href="bookList.html">Book List</a>
+        <a class="mobileLinks" href="bookSearch.html">Search</a>
+        <a class="mobileLinks" href="aboutMe.html">About</a>
+      </div>
+    </div>
+    <!-- Desktop Nav -->
     <ul class="nav nav-pills">
       <li class="nav-item">
         <a class="nav-link" href="/">Homepage</a>
@@ -75,5 +88,6 @@
         </p>
       </div>
     </div>
+    <script src="js/mobileNav.js"></script>
   </body>
 </html>

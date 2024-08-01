@@ -13,8 +13,8 @@
   align-self: center;
   display: flex;
   flex-direction: row;
-  height: fit-content;
-  width: fit-content;
+  height: 50%;
+  width: 50%;
 }
 .resultsIcon {
   width: 40%;
