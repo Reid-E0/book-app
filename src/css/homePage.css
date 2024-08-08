@@ -17,10 +17,6 @@
   grid-row: 2;
 }
 
-.four {
-  grid-column: 1;
-  grid-row: 2;
-}
 @media screen and (max-width: 760px) {
   .wrapper {
     display: grid;
@@ -34,19 +30,10 @@
   }
   .two {
     grid-column: 1;
-    grid-row: 3;
-    margin-top: -5px;
+    grid-row: 2;
   }
   .three {
     grid-column: 1;
-    grid-row: 4;
-    margin-top: -10%;
-  }
-
-  .four {
-    grid-column: 1;
-    grid-row: 2;
-    margin-top: -45px;
-    padding-top: 10px;
+    grid-row: 3;
   }
 }
