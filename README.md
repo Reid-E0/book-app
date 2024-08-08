@@ -23,6 +23,10 @@ The Book List allows users to manually enter in Author and Book titles, along wi
 
 The LOC search tool uses the Library of Congress API to populate the results. I limited the API to only return items that have been digitized. One aspect of the API that presented difficulties is that the "books" endpoint returns all printed materials, which includes scans of woodcuts, pieces of legislation, and more. Since there are no standard response forms, you cannot count on each item including the same attributes. In the future, I would like to improve the search function by adding more ways for the user to craft more specific searches, or to switch which collection they search.
 
+### Design
+
+For visual design, I decided to use the Bootstrap Swatches with a mix of my own style sheets.
+
 ## Inspiration
 
 For this project, I decided that
