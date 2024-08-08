@@ -76,7 +76,7 @@ class Storage {
     localStorage.setItem('books', JSON.stringify(books));
   }
 }
-//Diplay Books
+//Display Books
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
 //Add Books
 document.querySelector('#book-form').addEventListener('submit', (e) => {
@@ -91,7 +91,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   if (title === '' || author === '' || isbn === '') {
     UI.showAlert('Please fill all form fields', 'danger');
   } else {
-    //instatiate book class
+    //instantiate book class
     const book = new Book(title, author, isbn);
     //Add to List
     UI.addBookToList(book);

@@ -1,6 +1,6 @@
 # book-app
 
-Welcome to myReads! This project respresents the culmination of my work in the Code Louisville program. For this project, I decided that I wanted to create an app that would allow users to create lists of books they plan to read, as well as query the Library of Congress database for additional materials. pstone project for Code Louisville
+Welcome to myReads! This project represents the culmination of my work in the Code Louisville program. For this project, I decided that I wanted to create an app that would allow users to create lists of books they plan to read, as well as query the Library of Congress database for additional materials. capstone project for Code Louisville
 
 ## Installation
 
@@ -17,11 +17,11 @@ The app itself is very simple. From the Homepage, you can get a brief idea of ho
 
 ### Book List
 
-The Book List allows users to manually enter in Author and Book titles, along with an ISBN or call number. This part of the app uses Vanilla JS classes for the functionality. The list is stored in your local storage, so that means that the list will persist until you clear your cache.
+The Book List allows users to manually enter in Author and Book titles, along with an ISBN or call number. This part of the app uses Vanilla JS classes for the functionality. The book class defines the book object and book methods. So, when a user enters their info and hits "Add Book", the app creates a new book object and stores it in the table below. The list is stored in your local storage, so that means that the list will persist until you clear your cache.
 
 ### Search LOC
 
-The LOC search tool uses the Library of Congress API to populate the results. I limited the API to only return items that have been digitized. One aspect of the API that presented difficulties is that the "books" endpoint returns all printed materials, which includes scans of woodcuts, pieces of legislation, and more. Since there are no standard response forms, you cannot count on each item including the same attributes. In the future, I would like to improve the search function by adding more ways for the user to craft more specific searchs, or to switch which collection they search.
+The LOC search tool uses the Library of Congress API to populate the results. I limited the API to only return items that have been digitized. One aspect of the API that presented difficulties is that the "books" endpoint returns all printed materials, which includes scans of woodcuts, pieces of legislation, and more. Since there are no standard response forms, you cannot count on each item including the same attributes. In the future, I would like to improve the search function by adding more ways for the user to craft more specific searches, or to switch which collection they search.
 
 ## Inspiration
 
@@ -31,11 +31,21 @@ books they plan to read, as well as query the Library of Congress
 database for additional materials. I was inspired to create this project by my past experience as a
 research assistant and time in graduate school. When starting on a new
 project, you often find yourself with a scrap of paper with a dozen or
-so call numbers. Univserity libraries use the same cataloging system
+so call numbers. University libraries use the same cataloging system
 as the Library of Congress (LOC), which means books are shelved
 according to subject matter. What this means is that you often find
 the most interesting titles on your subject without even meaning to!
 This process of discovery in research is vital. To get started, click
 "Search LOC" above and starting searching the stacks! And don't worry,
-the search is restricted to digitaized materials only, so you don't
+the search is restricted to digitized materials only, so you don't
 even have to go to the library to pull your first text.
+
+## Plans for Future Features and Improvements
+
+### A Backend
+
+As I continue to learn and expand my web development skills, I hope to keep building on this project. In particular, I am interested next in creating a backend database for the site in order to have user accounts. For this, I am planning to look into both MongoDB and postgreSQL. I think it would be interesting to experiment with both to get experience with non-relational and relational databases.
+
+### More API Features
+
+In addition to a backend, I am also interested in expanding the API search on the app. Currently, it only as one text field and searches against the title, author, and description of each listing. But, I would like to expand the user's ability to select the search endpoint, or to provide a more nuanced query.
