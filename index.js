@@ -13,7 +13,7 @@ app.get('/bookList.html', (req, res) => {
 app.get('/bookSearch.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/bookSearch.html'));
 });
-app.get('/aboutme.html', (req, res) => {
+app.get('/aboutMe.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/aboutMe.html'));
 });
 app.use(express.static('src'));
